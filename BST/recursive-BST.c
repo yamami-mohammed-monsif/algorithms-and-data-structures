@@ -29,7 +29,7 @@ int main(){
     recursive_insert(root,30);
     recursive_insert(root,8);
 
-    printf("\n BST (inorder)");
+    printf("\n BST (inorder) :\n");
     inorder(root);
 
     return 0;
@@ -65,7 +65,7 @@ void inorder(struct node *p){      //display the elements of the tree in inorder
     if (p!=NULL)
     {
         inorder(p->left_ptr);
-        printf("\n  %i",p->data);
+        printf("\t %i   ",p->data);
         inorder(p->right_ptr);
     }
     
