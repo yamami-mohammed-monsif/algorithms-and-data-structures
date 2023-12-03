@@ -27,7 +27,7 @@ int main(){
     insert(8);
     insert(30);
 
-    printf("\n BST (inorder)");
+    printf("\n BST (inorder):\n");
     inorder(root);
 
     struct node *temp;      //we need a temp var for taking the result from search
@@ -89,7 +89,7 @@ void inorder(struct node *p){      //display the elements of the tree in inorder
     if (p!=NULL)
     {
         inorder(p->left_ptr);
-        printf("\n  %i",p->data);
+        printf("\t %i   ",p->data);
         inorder(p->right_ptr);
     }
     
