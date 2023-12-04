@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//the objective is to generate an AVL tree.
+
 struct node
 {
     struct node *left_ptr;
